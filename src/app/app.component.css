@@ -1,0 +1,240 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(10deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    45% {
+      transform: rotate(8deg);
+    }
+    60% {
+      transform: rotate(-8deg);
+    }
+    75% {
+      transform: rotate(4deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+  }
+
+  p{
+    font-family: cursive;
+    font-size: large;
+  }
+
+  h2{
+    font-family: fantasy;
+    font-size: 2em;
+  }
+  
+  h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 3em;
+    color: #1E90FF;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 20px 0;
+    text-align: center;
+  
+   
+    display: inline-block; 
+    animation: wave 2s ease-in-out infinite; 
+
+    padding-left: 100px;
+    
+  }
+ 
+
+  .background-grad {
+    background: linear-gradient(
+      135deg, 
+      rgba(173, 216, 230, 1) 0%, 
+      rgba(240, 248, 255, 1) 100%
+    );
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333; 
+    height: 100%;
+  }
+  
+  .centered-td {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+ 
+  .button:hover {
+    background-color: #0056b3; 
+    animation: shake 0.5s; 
+  }
+
+
+
+ 
+.custom-select {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    padding: 5px; 
+    font-size: 20px; 
+    background-color: 	#8b4513; 
+    color: white; 
+    appearance: none; 
+  }
+  
+  
+  .custom-select option {
+    background-color: #8b5a2b;
+    color: white; 
+  }
+  
+ 
+  .custom-select::-ms-expand {
+    display: none; 
+  }
+  
+
+
+  
+.styled-input {
+    width: 50%; 
+    max-width: 300px; 
+    height: 40px; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    padding: 0 15px; 
+    font-size: 16px; 
+    color: #333; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+  }
+  
+  
+  .styled-input:focus {
+    border-color: #007bff; 
+    background-color: #fff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  }
+
+
+
+
+  
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+ 
+  .custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+ 
+  .custom-checkbox .checkbox-box {
+    width: 24px; 
+    height: 24px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  
+  .custom-checkbox input[type="checkbox"]:checked + .checkbox-box {
+    background-color: #007bff; 
+    border-color: #007bff; 
+  }
+  
+  .custom-checkbox input[type="checkbox"]:checked + .checkbox-box::after {
+    content: "";
+    display: block;
+    width: 10px; 
+    height: 18px; 
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  
+  .custom-checkbox label {
+    margin-left: 8px; 
+    font-size: 16px; 
+    color: #333; 
+  }
+  
+  
+  
+
+
+  
+.progress-container {
+  width: 70%;
+  background-color: #9dadff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+}
+
+
+.progress-bar {
+  height: 30px;
+  width: 0%;
+  background-color: #3351e9;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: width 0.4s ease-in-out;
+}
